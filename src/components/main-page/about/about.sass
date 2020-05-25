@@ -1,0 +1,78 @@
+@import '../../../css/_mixin.sass'
+@import '../../../css/_variable.scss'
+    
+.box-about 
+    +desktop-width()
+    margin: 50px 0 0 0
+
+.description
+    +desktop-width()
+    font-family: $body-font
+    margin: 100px 0 0 0 !important
+    
+    +desktop()
+        margin: 30px 0 0 0 !important
+    +tablet() 
+        margin: 0 !important
+    +landscape-phone() 
+        margin: 0 !important
+    +portrait-phone() 
+        margin: 0 !important
+        text-align: center
+    .part-1
+        font-weight: bold
+        font-size: 30px
+        letter-spacing: 1px
+        +tablet() 
+            font-size: 20px
+    .part-2
+        color: #666666
+        margin: 8px 0 0 0
+    .part-3
+        color: #666666
+    .container-learn-more
+        margin: 45px 0 0 0
+        +portrait-phone() 
+            margin: 45px 0 50px 0
+        a
+            +button()
+            color: white
+            padding: 13px 30px
+            &:hover
+                color: #000000
+.img-description
+    .img-description-photo
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        width: 90%
+        height: auto
+
+        +tablet() 
+            margin: 55px 0 0 0
+            width: 100%
+
+        +landscape-phone() 
+            width: 100%
+            margin: 140px 0 0 0
+            height: 350px
+
+        +portrait-phone() 
+            margin: 0 
+
+            
+
+
+
+        
+
+
+
+
+    
+
+
+
+    
+
+

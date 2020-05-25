@@ -1,0 +1,55 @@
+@import '../../../css/_mixin.sass'
+.main-section
+    position: relative
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .service-box
+        position: relative
+        background-image: url(../../../assets/service/service-bg.jpg)
+        width: 100%
+        height: 100%
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            width: 50%
+            height: 100%
+            background: rgba(108,174,255,0.2)
+            +tablet() 
+                background: none
+            +landscape-phone()
+                background: none
+            +portrait-phone() 
+                background: none
+        .content-box-service
+            .title
+                color: #ffffff
+                font-weight: bold
+                font-size: 34px
+                text-transform: uppercase
+                padding: 100px 0 60px 0px
+            .description-block-container
+                .icon-1, .icon-2, .icon-3
+                    display: flex
+                    margin: 0 0 80px 0px 
+                    img
+                        width: 70px
+                        height: 60px
+                    span 
+                        color: #ffffff
+                        font-weight: bold
+                        text-transform: uppercase
+                        margin: 0 0 0 10px
+                        font-size: 18px
+                    p
+                        color: #777
+                        margin: 0 0 0 10px
+
+
+            

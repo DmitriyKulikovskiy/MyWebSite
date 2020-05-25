@@ -1,0 +1,33 @@
+@import '../../../css/_mixin.sass'
+@import '../../../css/_variable.scss'
+
+.discount50-box
+    background-image: url(../../../assets/discount50/discount50.jpg)
+    width: 100%
+    height: 100%
+    background-repeat: no-repeat
+    background-position: center
+    text-align: center
+    position: relative
+    margin-top: 140px
+    .discount50-title
+        font-weight: bold
+        color: #ffffff
+        font-size: 38px
+        text-transform: uppercase
+        padding-top: 105px
+    .discount50-description
+        color: #ffffff
+        font-size: 22px
+        padding-top: 15px
+    .button-block
+        padding-bottom: 50px
+        button 
+            +button()
+            padding: 13px 15px
+            color: #ffffff
+            text-transform: uppercase
+            &:hover
+                background-color: #ffffff00
+
+        

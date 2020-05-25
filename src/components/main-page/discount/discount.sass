@@ -1,0 +1,39 @@
+@import '../../../css/_mixin.sass'
+@import '../../../css/_variable.scss'
+    
+.discount-block
+    background-image: url(../../../assets/discount/discount-bg.jpg)
+    position: relative
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+    height: 480px
+    text-align: center
+    .discount
+        font-weight: bold
+        color: #ffffff
+        font-size: 42px
+        text-transform: uppercase
+        padding-top: 100px !important
+        span 
+            color: #f61b55
+    .description-discount
+        color: #ffffff
+        font-size: 26px
+        margin: 0 0 50px 0
+    .form-discount
+        display: flex
+        input
+            width: 100% !important
+            border: none
+            border-radius: 3px
+            padding: 13px 20px
+        button 
+            +button()
+            color: #ffffff
+            padding: 12px 10px 
+            text-transform: uppercase
+            margin-left: 10px
+            &:hover
+                background-color: #ffffff00
+        

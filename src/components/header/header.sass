@@ -1,0 +1,196 @@
+@import '../../css/_variable.scss'
+@import '../../css/_mixin.sass'
+
+
+// header part
+
+.header-area.main-header 
+    padding: 20px 0 0 0
+    background-color: #ffffff
+    border-radius: 5px
+    margin: 0
+    position: relative
+    height: auto
+    +desktop() 
+        margin-bottom: 20px
+    +tablet()
+        margin-bottom: 20px
+    +landscape-phone() 
+        margin-bottom: 20px 
+    +portrait-phone()
+        margin-bottom: 20px
+
+.main-menu
+    .open-main-menu
+        display: block
+
+
+.main-menu
+    ul
+        float: right
+        +desktop() 
+            display: none
+            float: left
+            position: absolute
+            top: 60px
+            right: 0
+            z-index: 4
+            background: $dark
+            width: 40%
+            padding: 20px 20px 30px
+        
+        
+        +tablet() 
+            display: none
+            float: left
+            position: absolute
+            top: 25px
+            left: 0
+            z-index: 4
+            background: $dark
+            width: 100%
+            padding: 20px 20px 30px
+        
+        +landscape-phone() 
+            display: none
+            float: left
+            position: absolute;
+            top: 25px
+            left: 0
+            z-index: 4
+            background: $dark
+            width: 100%
+            padding: 20px 20px 30px
+        
+        +portrait-phone() 
+            display: none
+            float: left
+            position: absolute
+            top: 25px
+            left: 0
+            z-index: 4
+            background: $dark
+            width: 100%
+            padding: 20px 20px 30px          
+        
+        li 
+            display: inline
+            position: relative
+            @include desktop() 
+                display: block
+            
+            @include tablet() 
+                display: block
+            
+            @include landscape-phone() 
+                display: block
+            
+            @include portrait-phone() 
+                display: block
+            
+            a 
+                color: $heading-text
+                font-family: $body-font
+                text-transform: uppercase
+                font-size: 14px;
+                font-weight: 600;
+                display: inline-block
+                padding: 15px
+                &:hover
+                    color: $main-color 
+
+                ul.sub-menu 
+                    opacity: 1
+                    visibility: visible
+                    top: 100%
+                    left: 30px
+                
+            
+            ul.sub-menu 
+                padding: 10px
+                opacity: 0
+                visibility: visible
+                position: absolute
+                top: 250%
+                left: 0
+                width: 250px
+                background: $dark
+                z-index: 2;
+                transition: 0.3s
+                li 
+                    display: block;
+                    a 
+                        transition: 0.3s
+                        &:hover 
+                            color: $main-color
+                        
+    .menu-btn 
+        display: inline
+        margin-left: 60px
+        +button()
+
+        +desktop() 
+            margin-left: 0
+        
+        +tablet() 
+            margin-left: 0
+            .login 
+                display: block
+
+        +landscape-phone() 
+            margin-left: 0
+            .login 
+                display: block
+
+        +portrait-phone() 
+            margin-left: 0
+            .login 
+                display: block
+
+
+.main-menu .main-menu-light 
+    ul 
+        @include tablet() 
+            background: $footer
+        
+        @include landscape-phone() 
+            background: $footer
+        
+        @include portrait-phone() 
+            background: $footer
+        
+    ul.sub-menu 
+        background: $footer
+        a 
+            color: #ffffff
+
+
+.custom-navbar 
+    position: absolute
+    top: -42px
+    right: 15px
+    background: $main-color
+    padding: 7px 10px
+    border-radius: 3px
+    transition: 0.2
+    cursor: pointer
+    display: none
+    @include desktop() 
+        top: 0
+        display: block
+    
+    @include tablet() 
+        display: block
+    
+    @include landscape-phone() 
+        display: block
+    
+    @include portrait-phone() 
+        display: block
+    
+    span 
+        background: $light
+        display: block
+        width: 30px
+        margin: 6px 0
+        height: 2px

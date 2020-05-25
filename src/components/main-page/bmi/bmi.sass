@@ -1,0 +1,71 @@
+@import '../../../css/_mixin.sass'
+@import '../../../css/variable.scss'
+
+.main-bmi
+    background-color: #f1f1f1
+    .content-bmi
+        padding: 0 0 8% 12%
+        +desktop()
+            padding-left: 5%
+        +tablet()
+            padding-left: 20px
+        .title-bmi
+            font-size: 35px
+            font-weight: bold
+            text-transform: uppercase
+            padding: 120px 0 15px 0  
+        .description-bmi
+            color: #777777
+        .form-bmi
+            .form-group
+                display: inline-block
+                margin-right: 10px
+                
+                label
+                    color: #777777
+                    text-transform: uppercase
+                    font-weight: bold
+                    display: flex
+                input
+                    display: flex
+                    padding: 13px 20px;
+                    border: none
+            button
+                +button()
+                color: #ffffff
+                text-transform: uppercase
+                display: block
+                margin: 20px 0 0 0
+                padding: 13px 15px 13px 15px
+                &:hover
+                    color: #000000
+                    
+
+.img-bmi-container
+    .img-bmi
+        img 
+            max-width: 100%
+            height: auto
+            vertical-align: middle;
+            border-style: none;
+            margin-top: 150px
+
+            +desktop()
+                margin-top: 200px
+
+            +tablet() 
+                margin-top: 20px
+
+            +landscape-phone()
+                margin-top: 20px
+
+            +portrait-phone() 
+                margin-top: 20px
+        
+
+            
+
+
+
+
+                    

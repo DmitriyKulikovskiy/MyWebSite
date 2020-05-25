@@ -1,0 +1,52 @@
+@import '../../../css/_variable.scss'
+@import '../../../css/_mixin'
+
+.banner-box
+    background-image: url(../../../assets/banner-bg.jpg)
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%
+    height: 800px
+    color: #ffffff
+    text-transform: uppercase
+    margin: 0 !important
+
+    .banner-title
+        margin: 50px 30px 0 0
+        h1
+            font-size: 120px
+            font-family: $body-font
+            font-weight: bold
+            margin: 0 200px 0 0
+        h2 
+            font-size: 120px
+            font-family: $body-font
+            font-weight: bold
+            margin: 0 50px 0 0
+
+        h3 
+            font-size: 70px
+            font-family: $body-font
+            font-weight: bold
+            margin: 0 20px 100px 0
+
+    a
+        +button()
+        color: #ffffff
+        margin: 0 100px 0 0 
+        &:hover
+            background-color: #ffffff00
+            color: #ffffff
+            text-transform: uppercase
+            text-decoration: none
+            
+
+                
+            
+.banner-effect
+    +desktop-width() 
+        width: 85%
+        height: 10px
+        background-color: #ffffff
+        border-radius: 0 0 12px 12px
